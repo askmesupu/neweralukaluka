@@ -1,0 +1,23 @@
+body, html {
+    margin:0; padding:0;
+    width:100%; height:100%;
+    font-family: 'Arial Black', sans-serif;
+    background: radial-gradient(circle at center, #0f0f1f, #000010);
+    color:#00fffa; overflow-x:hidden;
+}
+
+canvas { display:block; position:absolute; top:0; left:0; width:100%; height:100%; }
+
+.hero-text, .about-text { position:absolute; top:25%; width:100%; text-align:center; z-index:10; padding:0 10px; }
+.hero-text h1, .about-text h1 { font-size:3rem; letter-spacing:3px; }
+.hero-text p { font-size:1.2rem; color:#ff0080; }
+
+.info-section {
+    position:absolute; bottom:10%; left:50%; transform:translateX(-50%);
+    background:rgba(15,15,31,0.8); padding:15px 20px; border-radius:10px; max-width:90%; text-align:center;
+}
+.info-section h2 { margin:5px 0; color:#00fffa; }
+.info-section input, .info-section textarea { width:100%; padding:8px; margin:5px 0; border-radius:5px; border:none; }
+.info-section button { padding:8px 15px; margin-top:5px; background:#ff0080; color:#fff; border:none; cursor:pointer; border-radius:5px; }
+
+#social-links { position:absolute; bottom:5%; left:50%; transform:translateX(-50%); display:flex; gap:20px; z-index:10; }
